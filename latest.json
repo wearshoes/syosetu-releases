@@ -1,10 +1,10 @@
 {
-  "versionCode": 3,
-  "versionName": "0.3.0",
+  "versionCode": 4,
+  "versionName": "0.3.1",
   "minimumSupportedVersionCode": 1,
-  "apkUrl": "https://github.com/wearshoes/syosetu-releases/releases/download/v0.3.0/syosetu-v0.3.0.apk",
-  "releaseUrl": "https://github.com/wearshoes/syosetu-releases/releases/tag/v0.3.0",
-  "sha256": "4ec79971b2989970d2cbf1aee2e12ece96754c3a958aa77cff5d1b8126f936f2",
-  "releaseNotes": "更新内容：\n- 优化连续章节阅读与后续章节预翻译。\n- 阅读页默认隐藏上下控制区，点击屏幕中央显示。\n- 提升阅读进度条的滚动平滑度。\n- 禁止图片点击跳转，支持长按保存到相册。\n- 译文持久缓存，切换模型时自动清空。",
-  "publishedAt": "2026-08-03T19:05:08Z"
+  "apkUrl": "https://github.com/wearshoes/syosetu-releases/releases/download/v0.3.1/syosetu-v0.3.1.apk",
+  "releaseUrl": "https://github.com/wearshoes/syosetu-releases/releases/tag/v0.3.1",
+  "sha256": "f4faeaaf7064d20107754ffeec9f21f86856bfa69226a06a46f69b84aeed419d",
+  "releaseNotes": "更新内容：\n- 新增按小说持久化的人名、专有名词和游戏术语表，提升长篇章节译名一致性。\n- 术语在同一次翻译响应中提取，不增加额外 LLM 请求，保持 15 路并发。\n- 默认翻译 Prompt 更新为准确、自然并优先保持原文语气。\n- 译文和术语缓存会按模型、Prompt 和目标语言隔离，切换模型时一并清空。\n- 修复发布说明中文变成问号的问题，公开仓库仅发布正式 APK。",
+  "publishedAt": "2026-08-03T19:47:37Z"
 }
