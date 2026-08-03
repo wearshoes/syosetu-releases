@@ -5,6 +5,6 @@
   "apkUrl": "https://github.com/wearshoes/syosetu-releases/releases/download/v0.3.0/syosetu-v0.3.0.apk",
   "releaseUrl": "https://github.com/wearshoes/syosetu-releases/releases/tag/v0.3.0",
   "sha256": "4ec79971b2989970d2cbf1aee2e12ece96754c3a958aa77cff5d1b8126f936f2",
-  "releaseNotes": "??????????;?????????????;??????;??????????????????",
+  "releaseNotes": "更新内容：\n- 优化连续章节阅读与后续章节预翻译。\n- 阅读页默认隐藏上下控制区，点击屏幕中央显示。\n- 提升阅读进度条的滚动平滑度。\n- 禁止图片点击跳转，支持长按保存到相册。\n- 译文持久缓存，切换模型时自动清空。",
   "publishedAt": "2026-08-03T19:05:08Z"
 }
