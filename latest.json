@@ -1,10 +1,10 @@
 {
-  "versionCode": 1,
-  "versionName": "0.1.0",
+  "versionCode": 2,
+  "versionName": "0.2.0",
   "minimumSupportedVersionCode": 1,
-  "apkUrl": "https://github.com/wearshoes/syosetu-releases/releases/download/v0.1.0/syosetu-v0.1.0.apk",
-  "releaseUrl": "https://github.com/wearshoes/syosetu-releases/releases/tag/v0.1.0",
-  "sha256": "3ed122dbb793eb84751708b632c9d367f27b38c5a0e87be5be0ed32e7f7eb13c",
-  "releaseNotes": "Initial Android scaffold with Nocturne reader and DeepSeek translation.",
-  "publishedAt": "2026-08-03T13:25:30Z"
+  "apkUrl": "https://github.com/wearshoes/syosetu-releases/releases/download/v0.2.0/syosetu-v0.2.0.apk",
+  "releaseUrl": "https://github.com/wearshoes/syosetu-releases/releases/tag/v0.2.0",
+  "sha256": "97033595ab1d3346bd78d40e153f9f3b60fa45f93d147043c43f99e30696e459",
+  "releaseNotes": "Adds smooth discovery and settings, popular tags, history and favorites, reliable reader progress, editable translation prompts, encrypted DeepSeek credentials, translation caching, and verified Chat Completions and Responses support.",
+  "publishedAt": "2026-08-03T17:29:58Z"
 }
