@@ -1,0 +1,10 @@
+{
+  "versionCode": 1,
+  "versionName": "0.1.0",
+  "minimumSupportedVersionCode": 1,
+  "apkUrl": "https://github.com/wearshoes/syosetu-releases/releases/download/v0.1.0/syosetu-v0.1.0.apk",
+  "releaseUrl": "https://github.com/wearshoes/syosetu-releases/releases/tag/v0.1.0",
+  "sha256": "3ed122dbb793eb84751708b632c9d367f27b38c5a0e87be5be0ed32e7f7eb13c",
+  "releaseNotes": "Initial Android scaffold with Nocturne reader and DeepSeek translation.",
+  "publishedAt": "2026-08-03T13:25:30Z"
+}
