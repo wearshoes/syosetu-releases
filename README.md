@@ -1,30 +1,59 @@
 # Syosetu Translate Releases
 
-这是 Syosetu Translate 的公开发布与应用更新仓库。Android 源码保存在私有仓库中；这里仅发布签名 APK、更新清单和公开发布说明。
+## 中文
 
-## 安装包
+这是 Syosetu Translate 的公开发布与应用更新仓库。Android 源码保存在私有仓库中；本仓库只发布签名、压缩后的正式版 APK、`latest.json` 更新清单和公开更新日志。
+
+### 下载与安装
 
 - 正式版包名：`com.wearshoes.syosetu`
-- 当前版本：`0.1.0`（`versionCode 1`）
-- 最低 Android 版本：Android 8.0（API 26）
+- 最低系统：Android 8.0（API 26）
 - 下载入口：[GitHub Releases](https://github.com/wearshoes/syosetu-releases/releases)
+- 最新版本信息：[`latest.json`](latest.json)
 
-Debug 包使用独立包名 `com.wearshoes.syosetu.debug`，只用于本地开发调试，不在此仓库公开发布。Debug 与正式版可以同时安装。
+Debug 包名为 `com.wearshoes.syosetu.debug`，只用于本地调试，不会上传到本仓库。Debug 与正式版可同时安装。
 
-## 应用更新
+### 应用更新
 
-应用从 [`latest.json`](latest.json) 获取最新正式版本。该清单提供版本号、APK 下载地址、发布页面、SHA-256 和发布时间。更新采用完整签名 APK 覆盖安装，不使用动态 DEX 或运行时代码注入。
+应用读取 `latest.json` 检查新版本，并在更新弹窗中显示与 GitHub Release 完全一致的中文更新日志。清单包含版本号、APK 地址、Release 页面、SHA-256、更新时间和更新内容。
 
-正式版后续更新必须继续使用同一签名证书，并确保 `versionCode` 单调递增，否则 Android 不允许覆盖安装。
+正式版必须始终使用同一签名证书并递增 `versionCode`，Android 才允许覆盖安装。
 
-## 完整性校验
-
-下载 APK 后可计算 SHA-256，并与 `latest.json` 的 `sha256` 字段比较：
+### 完整性校验
 
 ```powershell
-Get-FileHash .\syosetu-v0.1.0.apk -Algorithm SHA256
+Get-FileHash .\syosetu-vX.Y.Z.apk -Algorithm SHA256
 ```
 
-## 说明
+计算结果应与 `latest.json.sha256` 一致。每个公开 Release 只能包含一个正式 APK，不能包含 Debug APK。
 
-这是非官方个人阅读客户端。小说正文由原站页面加载，本仓库不收录或再发布小说内容。LLM 服务凭据由用户在设备上提供，不包含在 APK 或本仓库中。
+本项目是非官方个人阅读客户端。小说正文由原站加载，本仓库不收录或再发布小说内容。LLM API Key 由用户在设备上配置，不包含在 APK 或本仓库中。
+
+---
+
+## English
+
+This is the public distribution and update repository for Syosetu Translate. Android source code is kept in a private repository. This repository contains only signed and minified release APKs, the `latest.json` update manifest, and public release notes.
+
+### Download
+
+- Release application ID: `com.wearshoes.syosetu`
+- Minimum Android version: Android 8.0 (API 26)
+- Downloads: [GitHub Releases](https://github.com/wearshoes/syosetu-releases/releases)
+- Current update metadata: [`latest.json`](latest.json)
+
+The debug application ID is `com.wearshoes.syosetu.debug`. Debug APKs are for local development only and are never published here. Debug and release builds can be installed together.
+
+### Updates and integrity
+
+The app reads `latest.json` and displays the same Chinese changelog as the corresponding GitHub Release. The manifest includes version metadata, APK and Release URLs, SHA-256, publication time, and release notes.
+
+Release APKs must keep the same signing certificate and use monotonically increasing `versionCode` values. Verify a downloaded APK with:
+
+```powershell
+Get-FileHash .\syosetu-vX.Y.Z.apk -Algorithm SHA256
+```
+
+The result must equal `latest.json.sha256`. Every public Release contains exactly one release APK and no debug artifacts.
+
+This is an unofficial personal reader. Novel content is loaded from the original site and is not archived or republished here. LLM credentials are supplied on the device and are not included in the APK or repository.
