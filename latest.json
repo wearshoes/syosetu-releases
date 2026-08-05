@@ -1,10 +1,10 @@
 {
-  "versionCode": 5,
-  "versionName": "0.4.0",
+  "versionCode": 6,
+  "versionName": "0.5.0",
   "minimumSupportedVersionCode": 1,
-  "apkUrl": "https://github.com/wearshoes/syosetu-releases/releases/download/v0.4.0/syosetu-v0.4.0.apk",
-  "releaseUrl": "https://github.com/wearshoes/syosetu-releases/releases/tag/v0.4.0",
-  "sha256": "c62ce006505168db50b2c669172cfb4f764e77b096f84d4354ec20eeb8be601c",
-  "releaseNotes": "更新内容：新增独立作品详情页和流式翻译；收藏搜索改为完整查询快照，并加入发现页书签栏和独立管理页；发现页翻译支持流式局部覆盖，返回后保留列表与翻译状态；优化正文缓存恢复、全书进度、默认译文与翻译按钮状态；更新默认翻译提示词和缓存清理规则；补充 Ehviewer_CN_SXJ 全界面结构与交互审查文档；完善私有源码与公开发布仓库的同步发布和中英文 README。",
-  "publishedAt": "2026-08-04T18:31:58Z"
+  "apkUrl": "https://github.com/wearshoes/syosetu-releases/releases/download/v0.5.0/syosetu-v0.5.0.apk",
+  "releaseUrl": "https://github.com/wearshoes/syosetu-releases/releases/tag/v0.5.0",
+  "sha256": "2b0141602adfe800856213a09b7ade61f313dc5d1590b36456b15b605dd7aabe",
+  "releaseNotes": "更新内容：\n- 发现页翻译改为流式分批显示，并统一遵守全局并发上限。\n- 重构作品详情页，完善信息加载、翻译切换、错误重试以及作者和关键词搜索。\n- 改进连续阅读与沉浸模式，修复横向滑动、进度显示、章节窗口、图片排版和阅读页面恢复问题。\n- 完善译文缓存与术语一致性，支持部分译文续翻、重新翻译清理、配置变更清库和缓存代次保护。\n- 解耦收藏与阅读历史，保留各页签滚动位置，并修复历史上限导致的收藏丢失。\n- 优化设置页和收藏搜索在小屏及大字体下的布局。\n- 修复翻译取消、共享并发许可、章节预取错误和旧阅读页面迟到回调等竞态及性能问题。",
+  "publishedAt": "2026-08-05T10:54:32Z"
 }
