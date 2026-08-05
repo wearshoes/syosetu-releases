@@ -1,10 +1,10 @@
 {
-  "versionCode": 9,
-  "versionName": "0.8.0",
+  "versionCode": 10,
+  "versionName": "0.9.0",
   "minimumSupportedVersionCode": 1,
-  "apkUrl": "https://github.com/wearshoes/syosetu-releases/releases/download/v0.8.0/syosetu-v0.8.0.apk",
-  "releaseUrl": "https://github.com/wearshoes/syosetu-releases/releases/tag/v0.8.0",
-  "sha256": "2dc5489a52cbce6b074dafb0d9529b3d79ee43b8002a4cea8a0eb3e08898544e",
-  "releaseNotes": "- 新增应用冷启动自动检查更新。\n- 更新提示显示最新版中文更新内容。\n- 支持稍后跳过，并在下次启动时再次提示。\n- 点击更新可直接打开公开仓库最新版下载页面。\n- 统一设置页手动检查更新与启动更新提示。",
-  "publishedAt": "2026-08-05T19:07:24Z"
+  "apkUrl": "https://github.com/wearshoes/syosetu-releases/releases/download/v0.9.0/syosetu-v0.9.0.apk",
+  "releaseUrl": "https://github.com/wearshoes/syosetu-releases/releases/tag/v0.9.0",
+  "sha256": "41118944f56e4666a19fc798d331689ea08f68778db216d858563ed97117a339",
+  "releaseNotes": "## v0.9.0 更新内容\n\n- 作品详情页不再显示持续加载提示，仅在加载失败时显示明确错误和重试入口。\n- 切换发现、详情和正文页面时会立即取消上一页面的翻译与网络请求，减少无效额度消耗和并发阻塞。\n- 发现页改为严格优先翻译当前可见标题，完成当前视口后再预翻译后续标题，并优化流式分片解析、密钥复用和网络并发。\n- 热门标签、作者和关键词结果采用独立页面栈，支持复杂嵌套访问时逐层返回并恢复查询、列表、译文和滚动位置。\n- 嵌套返回作品详情时会恢复已加载数据、译文完成状态以及原文或译文显示模式，不再重新加载或错误切换。\n- 翻译流必须收到协议完成事件才会写入缓存，异常中断会自动重试，避免保存不完整结果。\n- 搜索框使用不透明背景并调整输入布局，避免与列表文字重叠及中文下半部分被裁剪。\n- 左右侧边菜单改用跟随手势的原生抽屉拖动行为。\n- 设置中新增关于页面，可查看当前版本、打开公开发布仓库并手动检查更新。\n- LLM 设置新增 DeepSeek 推理等级，支持关闭、低、高、超高和最高等级，并按 Chat Completions 与 Responses 协议发送兼容参数。\n- 更新检查、远端模型和小説家 API 请求改为可取消并复用网络连接，响应解析移出主线程。\n- 固化正式发布流程，强制校验 UTF-8 中文、版本、凭据、测试、混淆、签名、真机双包、E2E 和远端 APK 哈希。\n",
+  "publishedAt": "2026-08-05T23:01:55Z"
 }
