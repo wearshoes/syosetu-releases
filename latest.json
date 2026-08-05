@@ -1,10 +1,10 @@
 {
-  "versionCode": 6,
-  "versionName": "0.5.0",
+  "versionCode": 7,
+  "versionName": "0.6.0",
   "minimumSupportedVersionCode": 1,
-  "apkUrl": "https://github.com/wearshoes/syosetu-releases/releases/download/v0.5.0/syosetu-v0.5.0.apk",
-  "releaseUrl": "https://github.com/wearshoes/syosetu-releases/releases/tag/v0.5.0",
-  "sha256": "2b0141602adfe800856213a09b7ade61f313dc5d1590b36456b15b605dd7aabe",
-  "releaseNotes": "更新内容：\n- 发现页翻译改为流式分批显示，并统一遵守全局并发上限。\n- 重构作品详情页，完善信息加载、翻译切换、错误重试以及作者和关键词搜索。\n- 改进连续阅读与沉浸模式，修复横向滑动、进度显示、章节窗口、图片排版和阅读页面恢复问题。\n- 完善译文缓存与术语一致性，支持部分译文续翻、重新翻译清理、配置变更清库和缓存代次保护。\n- 解耦收藏与阅读历史，保留各页签滚动位置，并修复历史上限导致的收藏丢失。\n- 优化设置页和收藏搜索在小屏及大字体下的布局。\n- 修复翻译取消、共享并发许可、章节预取错误和旧阅读页面迟到回调等竞态及性能问题。",
-  "publishedAt": "2026-08-05T10:54:32Z"
+  "apkUrl": "https://github.com/wearshoes/syosetu-releases/releases/download/v0.6.0/syosetu-v0.6.0.apk",
+  "releaseUrl": "https://github.com/wearshoes/syosetu-releases/releases/tag/v0.6.0",
+  "sha256": "8eae94f653c14f404658ca076c76330408061e1a7bb6e1d24074ad9229d94c56",
+  "releaseNotes": "- 发现页新增全局翻译开关，一次开启当前结果的标题和简介翻译，并可随时恢复原文。\n- 发现页按可视位置并行预翻译后续作品，预翻译数量可在翻译设置中配置，全局并发上限继续统一生效。\n- 移除作品列表中的单项翻译和收藏按钮，作品收藏统一放到详情页。\n- 移除“加载更多”按钮，接近列表末尾时自动预加载下一批结果，并与翻译预取共用滚动窗口。\n- 收藏搜索侧栏按 EhViewer 的规则收窄为最多 280dp，并在搜索框编辑时禁用侧滑，减少误触。\n- 修复发现页、作品详情和正文阅读器之间的翻译显示、取消、重试及迟到回调状态冲突。",
+  "publishedAt": "2026-08-05T13:26:02Z"
 }
