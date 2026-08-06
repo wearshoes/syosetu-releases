@@ -1,10 +1,10 @@
 {
-  "versionCode": 16,
-  "versionName": "0.10.5",
+  "versionCode": 17,
+  "versionName": "0.10.6",
   "minimumSupportedVersionCode": 1,
-  "apkUrl": "https://github.com/wearshoes/syosetu-releases/releases/download/v0.10.5/syosetu-v0.10.5.apk",
-  "releaseUrl": "https://github.com/wearshoes/syosetu-releases/releases/tag/v0.10.5",
-  "sha256": "c40f9b5d7aa8a749ff507bbb536273615e8a68ed56fd94fe296517f2296ba71f",
-  "releaseNotes": "## v0.10.5 更新内容\n\n- 固化 Sentry 修复发布后的自动收尾流程，只有 GitHub Issue 关闭、Sentry 分组解决和双端回读全部成功才算完成。\n- 支持在 `latest.json` 已前移后按真实修复版本处理历史事故，并验证修复版本与当前最新版本的双仓发布完整性。\n- 分离内部 Sentry 事件标识与脱敏输出，自动兼容已经产生的旧格式固定记录。\n- 提高真机发布门禁对 ADB 与 UIAutomator 瞬时抖动的恢复能力，最终界面状态不符合预期时仍会阻断发布。\n",
-  "publishedAt": "2026-08-06T16:02:05Z"
+  "apkUrl": "https://github.com/wearshoes/syosetu-releases/releases/download/v0.10.6/syosetu-v0.10.6.apk",
+  "releaseUrl": "https://github.com/wearshoes/syosetu-releases/releases/tag/v0.10.6",
+  "sha256": "dbd8e4765ce516895959e1c74ef5da1c0bfd64f4573b6c70fac44d599f26673f",
+  "releaseNotes": "# v0.10.6 更新内容\n\n- 修复发现页开启标题翻译后，分页会被当前可见翻译任务阻塞、列表无法继续向下滚动的问题。\n- 修复从左侧导航进入热门标签、历史、收藏或设置后，返回手势直接退出应用的问题；现在会统一返回发现页。\n- 扩充真机回归验收，覆盖翻译进行中的纵向滚动，以及四个导航入口返回发现页的行为。\n",
+  "publishedAt": "2026-08-06T16:49:15Z"
 }
