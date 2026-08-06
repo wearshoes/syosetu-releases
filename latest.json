@@ -1,10 +1,10 @@
 {
-  "versionCode": 10,
-  "versionName": "0.9.0",
+  "versionCode": 11,
+  "versionName": "0.10.0",
   "minimumSupportedVersionCode": 1,
-  "apkUrl": "https://github.com/wearshoes/syosetu-releases/releases/download/v0.9.0/syosetu-v0.9.0.apk",
-  "releaseUrl": "https://github.com/wearshoes/syosetu-releases/releases/tag/v0.9.0",
-  "sha256": "41118944f56e4666a19fc798d331689ea08f68778db216d858563ed97117a339",
-  "releaseNotes": "## v0.9.0 更新内容\n\n- 作品详情页不再显示持续加载提示，仅在加载失败时显示明确错误和重试入口。\n- 切换发现、详情和正文页面时会立即取消上一页面的翻译与网络请求，减少无效额度消耗和并发阻塞。\n- 发现页改为严格优先翻译当前可见标题，完成当前视口后再预翻译后续标题，并优化流式分片解析、密钥复用和网络并发。\n- 热门标签、作者和关键词结果采用独立页面栈，支持复杂嵌套访问时逐层返回并恢复查询、列表、译文和滚动位置。\n- 嵌套返回作品详情时会恢复已加载数据、译文完成状态以及原文或译文显示模式，不再重新加载或错误切换。\n- 翻译流必须收到协议完成事件才会写入缓存，异常中断会自动重试，避免保存不完整结果。\n- 搜索框使用不透明背景并调整输入布局，避免与列表文字重叠及中文下半部分被裁剪。\n- 左右侧边菜单改用跟随手势的原生抽屉拖动行为。\n- 设置中新增关于页面，可查看当前版本、打开公开发布仓库并手动检查更新。\n- LLM 设置新增 DeepSeek 推理等级，支持关闭、低、高、超高和最高等级，并按 Chat Completions 与 Responses 协议发送兼容参数。\n- 更新检查、远端模型和小説家 API 请求改为可取消并复用网络连接，响应解析移出主线程。\n- 固化正式发布流程，强制校验 UTF-8 中文、版本、凭据、测试、混淆、签名、真机双包、E2E 和远端 APK 哈希。\n",
-  "publishedAt": "2026-08-05T23:01:55Z"
+  "apkUrl": "https://github.com/wearshoes/syosetu-releases/releases/download/v0.10.0/syosetu-v0.10.0.apk",
+  "releaseUrl": "https://github.com/wearshoes/syosetu-releases/releases/tag/v0.10.0",
+  "sha256": "db619cc67d3c4781aafbf079ce629c4e89ac4db69baace027bc720369dbb9700",
+  "releaseNotes": "## v0.10.0 更新内容\r\n\r\n- 接入 Sentry Android 崩溃与错误采集，区分调试版和正式版环境及版本标识，并默认关闭个人信息、截图、视图层级和性能追踪采集。\r\n- 正式构建支持使用独立 CI 凭据上传 R8 混淆映射，调试构建不会上传映射文件。\r\n- 新增每小时运行的 Sentry 错误同步任务，将未解决问题按固定中文格式创建到私有源码仓库，并支持去重、更新、关闭和回归重开。\r\n- 自动 Issue 采用结构化白名单和隐私脱敏，不公开小说正文、译文、提示词、搜索词、请求数据、设备标识或原始事件内容。\r\n- 新增固定的 Issue 拉取与发布后状态回写脚本，验证私有及公开 Release 后才关闭 GitHub Issue 并将对应 Sentry 分组标记为已解决。\r\n- 新增仓库级 Sentry Issue 修复技能，固化问题选择、可信校验、复现、回归测试、真机验收、发布和双端回读流程。\r\n- 正式发布和 GitHub 候选包构建新增 APK 解包凭据扫描，覆盖 DEX、资源和原生库中的常见密钥及旧式 Sentry 令牌。\r\n- 补充大型项目 Issue 模板调研、Sentry 全生命周期说明和自动化状态机测试。\r\n",
+  "publishedAt": "2026-08-06T01:21:58Z"
 }
