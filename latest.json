@@ -1,10 +1,10 @@
 {
-  "versionCode": 11,
-  "versionName": "0.10.0",
+  "versionCode": 12,
+  "versionName": "0.10.1",
   "minimumSupportedVersionCode": 1,
-  "apkUrl": "https://github.com/wearshoes/syosetu-releases/releases/download/v0.10.0/syosetu-v0.10.0.apk",
-  "releaseUrl": "https://github.com/wearshoes/syosetu-releases/releases/tag/v0.10.0",
-  "sha256": "db619cc67d3c4781aafbf079ce629c4e89ac4db69baace027bc720369dbb9700",
-  "releaseNotes": "## v0.10.0 更新内容\r\n\r\n- 接入 Sentry Android 崩溃与错误采集，区分调试版和正式版环境及版本标识，并默认关闭个人信息、截图、视图层级和性能追踪采集。\r\n- 正式构建支持使用独立 CI 凭据上传 R8 混淆映射，调试构建不会上传映射文件。\r\n- 新增每小时运行的 Sentry 错误同步任务，将未解决问题按固定中文格式创建到私有源码仓库，并支持去重、更新、关闭和回归重开。\r\n- 自动 Issue 采用结构化白名单和隐私脱敏，不公开小说正文、译文、提示词、搜索词、请求数据、设备标识或原始事件内容。\r\n- 新增固定的 Issue 拉取与发布后状态回写脚本，验证私有及公开 Release 后才关闭 GitHub Issue 并将对应 Sentry 分组标记为已解决。\r\n- 新增仓库级 Sentry Issue 修复技能，固化问题选择、可信校验、复现、回归测试、真机验收、发布和双端回读流程。\r\n- 正式发布和 GitHub 候选包构建新增 APK 解包凭据扫描，覆盖 DEX、资源和原生库中的常见密钥及旧式 Sentry 令牌。\r\n- 补充大型项目 Issue 模板调研、Sentry 全生命周期说明和自动化状态机测试。\r\n",
-  "publishedAt": "2026-08-06T01:21:58Z"
+  "apkUrl": "https://github.com/wearshoes/syosetu-releases/releases/download/v0.10.1/syosetu-v0.10.1.apk",
+  "releaseUrl": "https://github.com/wearshoes/syosetu-releases/releases/tag/v0.10.1",
+  "sha256": "e4de44c6f58e44aa6490869a99c180db0b5ce6e6e334a91fdf75232eafb9aee3",
+  "releaseNotes": "## v0.10.1 更新内容\r\n\r\n- 修复发现页开启标题翻译后，作品详情页把“标题已翻译”误判成“简介和关键词已全部翻译”，导致简介无法继续翻译的问题。\r\n- 进入作品详情页时会复用已经翻译的标题，并继续补译作品简介和关键词，不会重复消耗标题翻译额度。\r\n- 新增对应的导航状态回归测试和真机 E2E 门禁，正式发版前必须验证标题缓存能够继续完成简介译文。\r\n",
+  "publishedAt": "2026-08-06T02:21:20Z"
 }
