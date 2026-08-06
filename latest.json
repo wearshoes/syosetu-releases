@@ -1,10 +1,10 @@
 {
-  "versionCode": 13,
-  "versionName": "0.10.2",
+  "versionCode": 14,
+  "versionName": "0.10.3",
   "minimumSupportedVersionCode": 1,
-  "apkUrl": "https://github.com/wearshoes/syosetu-releases/releases/download/v0.10.2/syosetu-v0.10.2.apk",
-  "releaseUrl": "https://github.com/wearshoes/syosetu-releases/releases/tag/v0.10.2",
-  "sha256": "dc22b3a0419f08aa0032e9fe2dbf44830342f5e489db5178cd0159b3ee2e0394",
-  "releaseNotes": "## v0.10.2 更新内容\r\n\r\n- 修复发现页左右滑动必须从屏幕边缘起手、容易被系统返回手势截获，导致两个侧边栏都无法打开的问题。\r\n- 左右侧边栏现在可以从发现页内容区域跟随手势滑出，并继续保留纵向列表滚动与排序栏横向滚动的手势优先级。\r\n- 真机抽屉验收改为从内容区域起手，避免边缘 ADB 手势造成假通过。\r\n- 修复页面切换取消发现页请求时，响应释放回到主线程并触发闪退的问题；详情翻译和正文入口现在可以正常接续。\r\n- 修复 Sentry 定时同步任务缺少读取令牌导致持续失败的问题，并验证自动化测试及真实定时工作流。\r\n",
-  "publishedAt": "2026-08-06T13:43:13Z"
+  "apkUrl": "https://github.com/wearshoes/syosetu-releases/releases/download/v0.10.3/syosetu-v0.10.3.apk",
+  "releaseUrl": "https://github.com/wearshoes/syosetu-releases/releases/tag/v0.10.3",
+  "sha256": "9d90bc5e1eef26d2eb83b0c208b635c6b16ff8e59a202b610f69d391b7b4ab26",
+  "releaseNotes": "## v0.10.3 更新内容\n\n- 修复 Sentry 崩溃修复已经发布，但 GitHub Issue 和 Sentry 分组可能因遗漏收尾步骤而继续保持未解决的问题。\n- 新增发布后事故收尾 Action，在确认私有 Release、公开正式 APK、`latest.json` 和中文更新说明一致后，自动关闭 GitHub Issue 并将对应 Sentry 分组标记为已解决。\n- Sentry 修复发布现在可通过 `-SentryIssue` 关联事故；固定发布脚本会等待双端状态回读成功，失败时保持可幂等重试，不再把“已发版”误报成“事故已处理完成”。\n",
+  "publishedAt": "2026-08-06T14:41:15Z"
 }
