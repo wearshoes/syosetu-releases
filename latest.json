@@ -1,10 +1,10 @@
 {
-  "versionCode": 14,
-  "versionName": "0.10.3",
+  "versionCode": 16,
+  "versionName": "0.10.5",
   "minimumSupportedVersionCode": 1,
-  "apkUrl": "https://github.com/wearshoes/syosetu-releases/releases/download/v0.10.3/syosetu-v0.10.3.apk",
-  "releaseUrl": "https://github.com/wearshoes/syosetu-releases/releases/tag/v0.10.3",
-  "sha256": "9d90bc5e1eef26d2eb83b0c208b635c6b16ff8e59a202b610f69d391b7b4ab26",
-  "releaseNotes": "## v0.10.3 更新内容\n\n- 修复 Sentry 崩溃修复已经发布，但 GitHub Issue 和 Sentry 分组可能因遗漏收尾步骤而继续保持未解决的问题。\n- 新增发布后事故收尾 Action，在确认私有 Release、公开正式 APK、`latest.json` 和中文更新说明一致后，自动关闭 GitHub Issue 并将对应 Sentry 分组标记为已解决。\n- Sentry 修复发布现在可通过 `-SentryIssue` 关联事故；固定发布脚本会等待双端状态回读成功，失败时保持可幂等重试，不再把“已发版”误报成“事故已处理完成”。\n",
-  "publishedAt": "2026-08-06T14:41:15Z"
+  "apkUrl": "https://github.com/wearshoes/syosetu-releases/releases/download/v0.10.5/syosetu-v0.10.5.apk",
+  "releaseUrl": "https://github.com/wearshoes/syosetu-releases/releases/tag/v0.10.5",
+  "sha256": "c40f9b5d7aa8a749ff507bbb536273615e8a68ed56fd94fe296517f2296ba71f",
+  "releaseNotes": "## v0.10.5 更新内容\n\n- 固化 Sentry 修复发布后的自动收尾流程，只有 GitHub Issue 关闭、Sentry 分组解决和双端回读全部成功才算完成。\n- 支持在 `latest.json` 已前移后按真实修复版本处理历史事故，并验证修复版本与当前最新版本的双仓发布完整性。\n- 分离内部 Sentry 事件标识与脱敏输出，自动兼容已经产生的旧格式固定记录。\n- 提高真机发布门禁对 ADB 与 UIAutomator 瞬时抖动的恢复能力，最终界面状态不符合预期时仍会阻断发布。\n",
+  "publishedAt": "2026-08-06T16:02:05Z"
 }
