@@ -1,10 +1,10 @@
 {
-  "versionCode": 19,
-  "versionName": "0.12.0",
+  "versionCode": 21,
+  "versionName": "0.13.1",
   "minimumSupportedVersionCode": 1,
-  "apkUrl": "https://github.com/wearshoes/syosetu-releases/releases/download/v0.12.0/syosetu-v0.12.0.apk",
-  "releaseUrl": "https://github.com/wearshoes/syosetu-releases/releases/tag/v0.12.0",
-  "sha256": "c75a46b337c849d320bb3eacd44ad84f643d042bc800e50715936f17de2f9046",
-  "releaseNotes": "# v0.12.0 更新内容\n\n- 发现页改用原生 RecyclerView 和可复用 ViewHolder，使用稳定 ID 与差量更新减少列表滚动时的界面创建和绑定开销。\n- 标题翻译在滚动期间只保留最新结果，停止滚动后再批量显示，并在视口稳定后才启动新的翻译任务，避免流式标题变化干扰手势和惯性滚动。\n- 分页结果按 N-code 去重，避免相邻页面返回重复作品时出现重复列表项。\n- 发现页返回时按稳定作品标识恢复位置，并保留 Activity 重建后的滚动状态；搜索栏会随恢复后的实际视口重新校正。\n- 补全下拉刷新嵌套滚动、排序选中状态的无障碍语义，并保持标题字号、字重和行距与原界面一致。\n- 正式发布流程不再默认执行自动化 E2E，避免无关历史交互路径阻塞交付；单元测试、Lint、正式构建、签名校验、物理真机覆盖安装和双包共存门禁继续保留。\n",
-  "publishedAt": "2026-08-08T11:08:50Z"
+  "apkUrl": "https://github.com/wearshoes/syosetu-releases/releases/download/v0.13.1/syosetu-v0.13.1.apk",
+  "releaseUrl": "https://github.com/wearshoes/syosetu-releases/releases/tag/v0.13.1",
+  "sha256": "fd8b07063669a8208857b5f595e47cd35649bd4347b194ca04e98f2b873a5554",
+  "releaseNotes": "# v0.13.1 更新内容\r\n\r\n- 修复从作品详情点击标签或作者进入发现页时，自动翻译开关未继承原发现页状态的问题。\r\n- 修复从作品详情点击作者后，发现页未按所选作者筛选作品的问题。\r\n",
+  "publishedAt": "2026-08-08T20:08:22Z"
 }
