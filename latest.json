@@ -1,10 +1,10 @@
 {
-  "versionCode": 17,
-  "versionName": "0.10.6",
+  "versionCode": 18,
+  "versionName": "0.11.0",
   "minimumSupportedVersionCode": 1,
-  "apkUrl": "https://github.com/wearshoes/syosetu-releases/releases/download/v0.10.6/syosetu-v0.10.6.apk",
-  "releaseUrl": "https://github.com/wearshoes/syosetu-releases/releases/tag/v0.10.6",
-  "sha256": "dbd8e4765ce516895959e1c74ef5da1c0bfd64f4573b6c70fac44d599f26673f",
-  "releaseNotes": "# v0.10.6 更新内容\n\n- 修复发现页开启标题翻译后，分页会被当前可见翻译任务阻塞、列表无法继续向下滚动的问题。\n- 修复从左侧导航进入热门标签、历史、收藏或设置后，返回手势直接退出应用的问题；现在会统一返回发现页。\n- 扩充真机回归验收，覆盖翻译进行中的纵向滚动，以及四个导航入口返回发现页的行为。\n",
-  "publishedAt": "2026-08-06T16:49:15Z"
+  "apkUrl": "https://github.com/wearshoes/syosetu-releases/releases/download/v0.11.0/syosetu-v0.11.0.apk",
+  "releaseUrl": "https://github.com/wearshoes/syosetu-releases/releases/tag/v0.11.0",
+  "sha256": "366e01dbee1290d5e3e7ba4e67f224ab78fe8e1804b367b50f4d019f7ea84cfd",
+  "releaseNotes": "# v0.11.0 更新内容\n\n- 修复发现页动态排序时相邻分页可能返回重复小说、进而触发 Compose 列表重复 key 崩溃的问题。\n- 修复 Sentry 同步仅扫描 75 分钟窗口而永久漏掉历史未解决分组的问题；现在会完整对账全部未解决分组，同时保留 75 分钟近期事件统计。\n- 修复受抑制异常覆盖真实崩溃类型、已有 Issue 显示“未提供应用内堆栈”的问题，并强制正式版上传 R8 mapping、标记应用内调用帧。\n- 修复部分真机在发布门禁中使用 adb 流式覆盖安装后离线的问题，改用非流式安装以稳定保留数据的双包验收。\n- 发布门禁支持用户明确完成人工真机验收后跳过自动交互 E2E，同时继续强制物理设备、双包覆盖安装、签名与发布回读检查。\n- 支持同一修复版本一次收尾多个 Sentry Issue，并阻止历史事故被错误改绑到后续版本。\n- 优化阅读页控制栏与进度显示，切换控制栏时不再挤压正文或改变当前阅读锚点，并扩充真机布局验收。\n- 翻译网络层改用官方 OpenAI Java SDK，统一 Chat Completions 与 Responses 流式处理、取消传播和错误信息保留。\n",
+  "publishedAt": "2026-08-08T08:56:20Z"
 }
