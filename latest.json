@@ -1,10 +1,10 @@
 {
-  "versionCode": 21,
-  "versionName": "0.13.1",
+  "versionCode": 22,
+  "versionName": "0.13.2",
   "minimumSupportedVersionCode": 1,
-  "apkUrl": "https://github.com/wearshoes/syosetu-releases/releases/download/v0.13.1/syosetu-v0.13.1.apk",
-  "releaseUrl": "https://github.com/wearshoes/syosetu-releases/releases/tag/v0.13.1",
-  "sha256": "fd8b07063669a8208857b5f595e47cd35649bd4347b194ca04e98f2b873a5554",
-  "releaseNotes": "# v0.13.1 更新内容\r\n\r\n- 修复从作品详情点击标签或作者进入发现页时，自动翻译开关未继承原发现页状态的问题。\r\n- 修复从作品详情点击作者后，发现页未按所选作者筛选作品的问题。\r\n",
-  "publishedAt": "2026-08-08T20:08:22Z"
+  "apkUrl": "https://github.com/wearshoes/syosetu-releases/releases/download/v0.13.2/syosetu-v0.13.2.apk",
+  "releaseUrl": "https://github.com/wearshoes/syosetu-releases/releases/tag/v0.13.2",
+  "sha256": "ab131cc61cf2fa6cd364545ae2d55d34be5813cbdf5150593ec1897b9fc0c1d5",
+  "releaseNotes": "# v0.13.2 更新内容\n\n- 移除已停用的 Change Gate 脚本、配置和测试，简化仓库自动化与验收流程。\n",
+  "publishedAt": "2026-08-08T20:20:27Z"
 }
