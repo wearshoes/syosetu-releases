@@ -1,10 +1,10 @@
 {
-  "versionCode": 22,
-  "versionName": "0.13.2",
+  "versionCode": 23,
+  "versionName": "0.13.3",
   "minimumSupportedVersionCode": 1,
-  "apkUrl": "https://github.com/wearshoes/syosetu-releases/releases/download/v0.13.2/syosetu-v0.13.2.apk",
-  "releaseUrl": "https://github.com/wearshoes/syosetu-releases/releases/tag/v0.13.2",
-  "sha256": "ab131cc61cf2fa6cd364545ae2d55d34be5813cbdf5150593ec1897b9fc0c1d5",
-  "releaseNotes": "# v0.13.2 更新内容\n\n- 移除已停用的 Change Gate 脚本、配置和测试，简化仓库自动化与验收流程。\n",
-  "publishedAt": "2026-08-08T20:20:27Z"
+  "apkUrl": "https://github.com/wearshoes/syosetu-releases/releases/download/v0.13.3/syosetu-v0.13.3.apk",
+  "releaseUrl": "https://github.com/wearshoes/syosetu-releases/releases/tag/v0.13.3",
+  "sha256": "588eca8ffb3269946b253dea82876db57a92e731ba071d601a10d87f1691596d",
+  "releaseNotes": "本次更新调整了正式发布流程：\n\n- 本地继续构建 Release APK，并在物理设备上完成签名连续性、覆盖安装和双包共存验收。\n- 本地验收通过后，GitHub Actions 会签出同一个提交，重新测试、构建、签名并发布正式 APK。\n- 私有源码 Release、公开 APK Release、latest.json、中文更新说明和远端 APK 哈希继续由发布器统一校验。\n",
+  "publishedAt": "2026-08-08T21:09:44Z"
 }
