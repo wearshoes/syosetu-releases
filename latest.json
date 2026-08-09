@@ -1,10 +1,10 @@
 {
-  "versionCode": 24,
-  "versionName": "0.13.4",
+  "versionCode": 25,
+  "versionName": "0.14.0",
   "minimumSupportedVersionCode": 1,
-  "apkUrl": "https://github.com/wearshoes/syosetu-releases/releases/download/v0.13.4/syosetu-v0.13.4.apk",
-  "releaseUrl": "https://github.com/wearshoes/syosetu-releases/releases/tag/v0.13.4",
-  "sha256": "eb92a84628d66c19a883a93e99c9efa34e14652b4d4ebe709e373869becf57ab",
-  "releaseNotes": "本次更新完善了正式 APK 和 Sentry 符号表的发布流程：\n\n- 私有源码 Release 与公开 Release 现在都会包含同一份由 GitHub Actions 构建、签名并压缩的正式 APK。\n- 发布器会分别下载两个仓库中的 APK，并确认文件名、数量和 SHA-256 与 Action 构建产物一致。\n- Sentry R8 mapping 继续由正式 Release 构建自动上传，确保线上堆栈能够正确还原。\n",
-  "publishedAt": "2026-08-08T21:50:07Z"
+  "apkUrl": "https://github.com/wearshoes/syosetu-releases/releases/download/v0.14.0/syosetu-v0.14.0.apk",
+  "releaseUrl": "https://github.com/wearshoes/syosetu-releases/releases/tag/v0.14.0",
+  "sha256": "4d8d5e2ee8ffcca57508407a2a7482d0d35f5a9d9cdb55b7161ec5b5d3a8c529",
+  "releaseNotes": "本次更新改善了作品信息、阅读体验、列表翻译和缓存管理：\n\n- 修正作品详情中把独立斜杠分隔符显示成标签的问题，同时保留标签名称内部的斜杠。\n- 阅读正文时，上下控制栏改为覆盖显示，展开或收起不再挤压正文或改变当前阅读位置。\n- 热门标签、阅读历史和收藏现已支持翻译，并与发现页共享译文、术语和本地缓存。\n- “存储与更新”页面现在显示当前缓存大小并支持清空缓存，不再提供重复的检查更新入口。\n- 清空缓存只移除可重新生成的译文和术语数据，不会删除阅读历史、收藏、搜索收藏、设置或 API 密钥。\n",
+  "publishedAt": "2026-08-09T11:09:16Z"
 }
