@@ -1,10 +1,10 @@
 {
-  "versionCode": 26,
-  "versionName": "0.14.1",
+  "versionCode": 27,
+  "versionName": "0.15.0",
   "minimumSupportedVersionCode": 1,
-  "apkUrl": "https://github.com/wearshoes/syosetu-releases/releases/download/v0.14.1/syosetu-v0.14.1.apk",
-  "releaseUrl": "https://github.com/wearshoes/syosetu-releases/releases/tag/v0.14.1",
-  "sha256": "f1c66ae8dbb226159d71d229b2461c1c2d60994a146a4cd500edd9aadeff4478",
-  "releaseNotes": "# v0.14.1 更新内容\n\n- 修复正文沉浸模式中显示或隐藏顶部、底部控件时系统栏同步切换的问题，避免系统栏动画挤压正文、改变文字位置。\n- 正文控件继续覆盖在文章上方，阅读期间保持同一套沉浸式窗口策略，退出正文后再恢复系统栏。\n- 删除已停用的 E2E、Android CI 及其本地联动文件，普通需求默认直接修改，仅在明确要求时使用 OpenSpec 发版流程。\n- 无真机在线时跳过本地构建、APK 校验和覆盖安装；正式发布 Action 只核对版本与中文更新说明，再构建签名正式 APK 并发布。\n",
-  "publishedAt": "2026-08-09T13:49:25Z"
+  "apkUrl": "https://github.com/wearshoes/syosetu-releases/releases/download/v0.15.0/syosetu-v0.15.0.apk",
+  "releaseUrl": "https://github.com/wearshoes/syosetu-releases/releases/tag/v0.15.0",
+  "sha256": "57da69be2c8b58c1317720c01ebb5f4fa577d2bea17cef7e55bdc63d9d65663f",
+  "releaseNotes": "# v0.15.0 更新内容\n\n- 重做小说正文阅读界面，新增沉浸式标题、时间、电量、章节位置和全书进度；展开 iReader 风格上下工具栏时不挤压正文，也不改变阅读位置。\n- 新增仅作用于阅读窗口的亮度调节、跟随系统亮度、可逆夜间模式、三档正文间距、四种内置背景和本地自定义背景。\n- 新增懒加载章节目录，可快速定位当前章节、跳转上一话或下一话，并通过全书进度条精确跳转。\n- 新增纯本地阅读书签，支持保存当前位置、恢复阅读进度、按小说查看和删除，不需要账号或网络同步。\n",
+  "publishedAt": "2026-08-09T20:16:30Z"
 }
