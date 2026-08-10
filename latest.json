@@ -1,10 +1,10 @@
 {
-  "versionCode": 27,
-  "versionName": "0.15.0",
+  "versionCode": 28,
+  "versionName": "0.15.1",
   "minimumSupportedVersionCode": 1,
-  "apkUrl": "https://github.com/wearshoes/syosetu-releases/releases/download/v0.15.0/syosetu-v0.15.0.apk",
-  "releaseUrl": "https://github.com/wearshoes/syosetu-releases/releases/tag/v0.15.0",
-  "sha256": "57da69be2c8b58c1317720c01ebb5f4fa577d2bea17cef7e55bdc63d9d65663f",
-  "releaseNotes": "# v0.15.0 更新内容\n\n- 重做小说正文阅读界面，新增沉浸式标题、时间、电量、章节位置和全书进度；展开 iReader 风格上下工具栏时不挤压正文，也不改变阅读位置。\n- 新增仅作用于阅读窗口的亮度调节、跟随系统亮度、可逆夜间模式、三档正文间距、四种内置背景和本地自定义背景。\n- 新增懒加载章节目录，可快速定位当前章节、跳转上一话或下一话，并通过全书进度条精确跳转。\n- 新增纯本地阅读书签，支持保存当前位置、恢复阅读进度、按小说查看和删除，不需要账号或网络同步。\n",
-  "publishedAt": "2026-08-09T20:16:30Z"
+  "apkUrl": "https://github.com/wearshoes/syosetu-releases/releases/download/v0.15.1/syosetu-v0.15.1.apk",
+  "releaseUrl": "https://github.com/wearshoes/syosetu-releases/releases/tag/v0.15.1",
+  "sha256": "c9ed4d33bac5bc2f1598aff04706509b0f9d4f6e964a5d9590c3a91eadef5f51",
+  "releaseNotes": "# v0.15.1 更新内容\n\n- 修复打开小说正文时因阅读器调色板颜色转换错误导致的闪退。\n- 加强浅色、暖色、绿色、深色及夜间阅读配色的回归覆盖，确保沉浸式标题、时间、电量、进度和上下工具栏稳定显示。\n",
+  "publishedAt": "2026-08-10T15:04:27Z"
 }
