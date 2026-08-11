@@ -1,10 +1,10 @@
 {
-  "versionCode": 29,
-  "versionName": "0.15.2",
+  "versionCode": 30,
+  "versionName": "0.15.3",
   "minimumSupportedVersionCode": 1,
-  "apkUrl": "https://github.com/wearshoes/syosetu-releases/releases/download/v0.15.2/syosetu-v0.15.2.apk",
-  "releaseUrl": "https://github.com/wearshoes/syosetu-releases/releases/tag/v0.15.2",
-  "sha256": "8557077b2726595ce51a1b49f9332699407935d94792d69c38a248a4078fd320",
-  "releaseNotes": "# v0.15.2 更新内容\n\n- 修复正文页偶发白屏和持续转圈，原文加载完成后立即显示，不再等待翻译结束。\n- 修复快速滑动长文章时翻译进度停滞、重复发送请求以及同一原文被多次替换的问题，增加批次去重、单飞复用和取消隔离。\n- 优化阅读器底部进度与目录、亮度、阅读、显示面板布局；面板停靠在功能栏上方，功能按钮保持可见可操作，并减少多余空白。\n- 修复夜间与日间模式切换时正文文字、背景和 WebView 配色不同步的问题，切回日间后不再出现遮罩发灰或内容看不清。\n- 修复横竖屏切换后返回发现页的问题，配置变更后继续保留当前正文、小说和章节。\n",
-  "publishedAt": "2026-08-11T15:38:54Z"
+  "apkUrl": "https://github.com/wearshoes/syosetu-releases/releases/download/v0.15.3/syosetu-v0.15.3.apk",
+  "releaseUrl": "https://github.com/wearshoes/syosetu-releases/releases/tag/v0.15.3",
+  "sha256": "18efd2fc90d21ab692f503302177f7eb1372d6aa05a10f560cb0a8c2e0031aa5",
+  "releaseNotes": "# v0.15.3 更新内容\n\n- 修复从发现页进入小说详情或正文后再返回时，发现列表会跳回顶部的问题；现在会恢复离开前的列表位置。\n",
+  "publishedAt": "2026-08-11T16:29:15Z"
 }
