@@ -1,10 +1,10 @@
 {
-  "versionCode": 30,
-  "versionName": "0.15.3",
+  "versionCode": 31,
+  "versionName": "0.15.4",
   "minimumSupportedVersionCode": 1,
-  "apkUrl": "https://github.com/wearshoes/syosetu-releases/releases/download/v0.15.3/syosetu-v0.15.3.apk",
-  "releaseUrl": "https://github.com/wearshoes/syosetu-releases/releases/tag/v0.15.3",
-  "sha256": "18efd2fc90d21ab692f503302177f7eb1372d6aa05a10f560cb0a8c2e0031aa5",
-  "releaseNotes": "# v0.15.3 更新内容\n\n- 修复从发现页进入小说详情或正文后再返回时，发现列表会跳回顶部的问题；现在会恢复离开前的列表位置。\n",
-  "publishedAt": "2026-08-11T16:29:15Z"
+  "apkUrl": "https://github.com/wearshoes/syosetu-releases/releases/download/v0.15.4/syosetu-v0.15.4.apk",
+  "releaseUrl": "https://github.com/wearshoes/syosetu-releases/releases/tag/v0.15.4",
+  "sha256": "de8eef105a194a06528769e55203aa86e109699c72e54afdb3c85708ecc68518",
+  "releaseNotes": "# v0.15.4 更新内容\n\n- 进一步修复从发现页进入详情或正文后返回时的列表位置跳变；发现页会保留原有页面实例，翻译期间返回也不会闪回顶部。\n- 应用现在固定为竖屏显示，不再随系统屏幕旋转进入横屏。\n- 优化正文进度和阅读亮度控制，统一为无缝圆角进度条，并修复拖动正文进度后短暂跳回旧位置的问题。\n",
+  "publishedAt": "2026-08-11T20:49:29Z"
 }
