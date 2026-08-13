@@ -1,10 +1,10 @@
 {
-  "versionCode": 31,
-  "versionName": "0.15.4",
+  "versionCode": 32,
+  "versionName": "0.15.5",
   "minimumSupportedVersionCode": 1,
-  "apkUrl": "https://github.com/wearshoes/syosetu-releases/releases/download/v0.15.4/syosetu-v0.15.4.apk",
-  "releaseUrl": "https://github.com/wearshoes/syosetu-releases/releases/tag/v0.15.4",
-  "sha256": "de8eef105a194a06528769e55203aa86e109699c72e54afdb3c85708ecc68518",
-  "releaseNotes": "# v0.15.4 更新内容\n\n- 进一步修复从发现页进入详情或正文后返回时的列表位置跳变；发现页会保留原有页面实例，翻译期间返回也不会闪回顶部。\n- 应用现在固定为竖屏显示，不再随系统屏幕旋转进入横屏。\n- 优化正文进度和阅读亮度控制，统一为无缝圆角进度条，并修复拖动正文进度后短暂跳回旧位置的问题。\n",
-  "publishedAt": "2026-08-11T20:49:29Z"
+  "apkUrl": "https://github.com/wearshoes/syosetu-releases/releases/download/v0.15.5/syosetu-v0.15.5.apk",
+  "releaseUrl": "https://github.com/wearshoes/syosetu-releases/releases/tag/v0.15.5",
+  "sha256": "f4434955065a019870a253ae281ea476debc5ee85925564e8b58c93956d5cf4e",
+  "releaseNotes": "# v0.15.5 更新内容\n\n- 新增核心业务异常的隐私安全上报，覆盖翻译、网络、阅读、存储和更新检查等最终失败，同时继续保留崩溃、ANR、原生崩溃和混淆堆栈定位能力。\n- 首页收藏搜索支持跟随翻译开关显示中文，自动名称会同步翻译，自定义名称保持不变；实际搜索、编辑和保存始终使用原始搜索词。\n- DeepSeek 所有模型现均可使用 Chat Completions 和 Responses，推理等级会按所选协议正确传递，并加强了流式响应、结构化输出和 HTTP 错误的安全处理。\n",
+  "publishedAt": "2026-08-13T18:02:39Z"
 }
