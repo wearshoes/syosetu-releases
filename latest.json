@@ -1,10 +1,10 @@
 {
-  "versionCode": 33,
-  "versionName": "0.15.6",
+  "versionCode": 34,
+  "versionName": "0.15.7",
   "minimumSupportedVersionCode": 1,
-  "apkUrl": "https://github.com/wearshoes/syosetu-releases/releases/download/v0.15.6/syosetu-v0.15.6.apk",
-  "releaseUrl": "https://github.com/wearshoes/syosetu-releases/releases/tag/v0.15.6",
-  "sha256": "f5d6c0c1283d3035244427e819bb066088eb737ec4dfd05510a7dcfcfccfd6e1",
-  "releaseNotes": "# v0.15.6 更新内容\n\n- 引入 Release Ops 配置，统一管理 Android 构建、签名、版本、发布仓库和 Sentry 发布标识，减少项目迁移及后续维护中的硬编码。\n- 完善私有源码仓库与公开发布仓库的双仓发版流程：一次构建生成同一 APK，并同步发布校验和、版本清单和更新信息。\n- 加强 Sentry 错误同步与修复关单流程的配置校验和隐私边界，保持错误处理与正式发版状态相互独立。\n",
-  "publishedAt": "2026-08-20T11:05:28Z"
+  "apkUrl": "https://github.com/wearshoes/syosetu-releases/releases/download/v0.15.7/syosetu-v0.15.7.apk",
+  "releaseUrl": "https://github.com/wearshoes/syosetu-releases/releases/tag/v0.15.7",
+  "sha256": "eba38dfe92f8d74545cd3f0434affcce9480afc8390089c2449798a3f65d2290",
+  "releaseNotes": "# v0.15.7 更新内容\n\n- 修复阅读器批量翻译结果中个别段落 ID 被模型遗漏或改写时，整批译文反复失败的问题。\n- 现在会保留已验证的译文，仅重新请求缺失段落；单段补译可安全恢复原始段落关联，减少重复请求和翻译中断。\n- 保持严格结果解析规则，继续拒绝重复、缺失或额外的段落 ID，并补充对应回归测试。\n- 修复 Release Ops 正式构建与 Sentry mapping 上传之间的令牌门禁冲突，确保签名 APK 构建和 mapping 上传按独立步骤执行。\n",
+  "publishedAt": "2026-08-21T05:09:05Z"
 }
